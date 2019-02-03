@@ -24,6 +24,10 @@ This Docker image for gitbook is manage markdown files in *gitbook* directory.
 Run the following command, to init your gitbook
 
 ```bash
+$ curl https://codeload.github.com/HeRoMo/gitbook-template/zip/master -O
+$ unzip master
+$ mv gitbook-template-master your-gitbook-name
+$ cd your-gitbook-name
 $ docker-compose run --rm gitbook init
 ```
 
