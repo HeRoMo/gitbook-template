@@ -6,7 +6,8 @@
 	"recommendations": [
 		"EditorConfig.EditorConfig",
     "SanaAjani.taskrunnercode",
-    "shd101wyy.markdown-preview-enhanced"
+    "shd101wyy.markdown-preview-enhanced",
+    "yzhang.markdown-all-in-one"
 	],
 	// List of extensions recommended by VS Code that should not be recommended for users of this workspace.
 	"unwantedRecommendations": [
