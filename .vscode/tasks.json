@@ -1,0 +1,40 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Run Gitbook server",
+            "type": "shell",
+            "command": "docker-compose up",
+            "group": "none"
+        },
+        {
+            "label": "Output PDF",
+            "type": "shell",
+            "command": "docker-compose run --rm gitbook pdf",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "Output EPUB",
+            "type": "shell",
+            "command": "docker-compose run --rm gitbook epub",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "Output MOBI",
+            "type": "shell",
+            "command": "docker-compose run --rm gitbook mobi",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
