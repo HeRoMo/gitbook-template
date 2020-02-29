@@ -1,7 +1,7 @@
 version: "2.2"
 services:
   plantuml:
-    image: 'bitjourney/plantuml-service:1.3.3'
+    image: 'bitjourney/plantuml-service:1.3.5'
 
   gitbook:
     image: hero/gitbook:latest
